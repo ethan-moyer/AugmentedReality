@@ -83,9 +83,55 @@
         min-width: 100%;
       }
     </style>
-    <div id="image">
-      <img src="http://www.augment.com/blog/wp-content/uploads/2016/08/augmented-reality-Augment-blog.jpg" style="width:1600px;height:600;overflow:hidden">
-    </div>
+ <!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<div class="w3-container">
+  <h2>Animated Slides</h2>
+  <p>Slide or fade in an element from the top, bottom, left or right of the screen with the w3-animate-* classes.</p>
+</div>
+
+<div class="w3-content w3-section" style="max-height:100px">
+  <img class="mySlides w3-animate-left" src="http://www.augmentedrealitytrends.com/wp-content/uploads/2013/10/Augmented-reality-glasses-for-Translation.jpg" style="width:100%">
+  <img class="mySlides w3-animate-left" src="http://www.digitaljournal.com/img/8/7/3/i/2/2/3/o/Microsoft-HoloLens.jpg" style="width:100%">
+  <img class="mySlides w3-animate-left" src="http://www.virtualaugmentedreality.net/_/rsrc/1471890357546/news/The-Microsoft-Hololens-Another-Google-Glass/Hololens-Sony-Steam-HTC-Future-VR-Entertainment-Vive-Devices-Headset-Realistic-Virtual%20Reality-Gear%20VR-Samsung%20VR-Oculus%20Rift-360-AR.png" style="width:100%">
+  <img class="mySlides w3-animate-left" src="http://www.panoramaaudiovisual.com/wp-content/uploads/2016/10/Hololens.jpg" style="width:100%">
+    <img class="mySlides w3-animate-left" src="http://www.augmentedrealitytrends.com/wp-content/uploads/2014/01/Augmented-Reality-and-Social-Media.jpg" style="width:100%">
+      <img class="mySlides w3-animate-left" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCY4uszH96YJbv3jGLeU9Iy83jHmioFGab_cDmXgYdTw0M3b3Fig" style="width:100%">     
+      <img class="mySlides w3-animate-left" src="http://ind5.ccio.co/o/V3/l6/FuturisticLifestyleAugmentedRealityMicrosoftImaginesTheFutureForNFLFansWithHoloLens2.jpg" style="width:100%">
+      <img class="mySlides w3-animate-left" src="http://assets-jpcust.jwpsrv.com/thumbs/cE2PXhUe.jpg" style="width:100%">     
+      
+      
+      
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+</script>
+
+</body>
+</html>
+
     <!-- Header Carousel -->
     <!--<header id="myCarousel" class="carousel slide">
 
